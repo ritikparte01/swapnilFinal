@@ -6791,6 +6791,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .work-under-header .work-item img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -8660,6 +8661,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .fullscreen-slider .slider-item .content-inner .slider-header h1 {
   font-size: 65px;
   font-weight: 700;
+  margin: auto;
 }
 
 @media only screen and (max-width: 767px) {
