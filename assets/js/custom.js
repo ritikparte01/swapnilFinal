@@ -637,7 +637,9 @@ function initMap() {
       e('[data-dsn-col="3"] .slick-slider').slick({
         infinite: !0,
         slidesToShow: 3,
-        arrows: !1,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev gall slick-arrow"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>',
+        nextArrow: '<button type="button" class="slick-next gall slick-arrow"><i class="fas fa-chevron-right" aria-hidden="true"></button>',
         dots: !0,
         autoplay: !0,
         responsive: [
