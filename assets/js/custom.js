@@ -1456,3 +1456,47 @@ function initMap() {
 })(jQuery);
 
 
+//logo slider
+
+$('.logos-slider1').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1800,
+  arrows: false,
+  dots: false,
+  pauseOnHover: false,
+  responsive: [{
+  breakpoint: 768,
+  settings: {
+  slidesToShow: 3
+  }
+  }, {
+  breakpoint: 520,
+  settings: {
+  slidesToShow: 2
+  }
+  }]
+  });
+
+  $('.logos-slider2').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    arrows: false,
+    dots: false,
+       rtl: true,
+    pauseOnHover: false,
+    responsive: [{
+    breakpoint: 768,
+    settings: {
+    slidesToShow: 3
+    }
+    }, {
+    breakpoint: 520,
+    settings: {
+    slidesToShow: 2
+    }
+    }]
+    });
