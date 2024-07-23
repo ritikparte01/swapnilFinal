@@ -1500,3 +1500,24 @@ $('.logos-slider1').slick({
     }
     }]
     });
+
+    function removeBodyClasses() {
+      console.log('reddd');
+      var classesToRemove = [
+        'hamburger-menu',
+        'dsn-effect-scroll',
+        'dsn-ajax',
+        'dsn-mobile',
+        'dsn-mousemove',
+        'locked-scroll'
+      ];
+    
+      var body = document.body;
+    
+      classesToRemove.forEach(function(className) {
+        if (body.classList.contains(className)) {
+          body.classList.remove(className);
+        }
+      });
+    }
+    removeBodyClasses();

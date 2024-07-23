@@ -356,7 +356,7 @@
                             <h2 class="title-main">Media</h2>
                         </div>
                     </div>
-                    <div class="container-fluid">
+                    <div class="container-fluid" id="gallSlider">
                         <div class="row">
                             <div class="col-lg-9 offset-lg-3">
                                 <div class="work-container">
@@ -1237,17 +1237,25 @@ $(document).ready(function() {
 // });
 
 
-function topHome() {
-  // Scroll to #home section when called
-  var homeElement = document.getElementById('home');
-  if (homeElement) {
-    var topOffset = homeElement.offsetTop;
-    window.scrollTo({
-      top: topOffset,
-      behavior: 'smooth' // Optional: Smooth scrolling
-    });
-  }
-}
+// ================ TOP SCROLL
+
+// function topHome() {
+//   // Scroll to #home section when called
+//   var homeElement = document.getElementById('home');
+//   if (homeElement) {
+//     var topOffset = homeElement.offsetTop;
+//     window.scrollTo({
+//       top: topOffset,
+//       behavior: 'smooth',
+//       delay: '4000ms' // Optional: Smooth scrolling
+//     });
+//   }
+// }
+
+
+
+
+
 
 // Event listener to call topHome() when body is clicked
 // document.body.addEventListener('click', function() {
