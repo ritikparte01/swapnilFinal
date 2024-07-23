@@ -13199,3 +13199,15 @@ border: 1px solid transparent;
 .slick-arrow.slick-hidden {
 display: none;
 }
+
+
+
+@media only screen and (max-height:600px) and (max-width: 1280px){
+  .pro-text h3{
+    font-size: 30px !important;
+  }
+
+  .box-seat .pro-text p{
+    font-size: 12px;
+  }
+}
