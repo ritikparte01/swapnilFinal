@@ -125,7 +125,7 @@
 
     <main class="main-root">
         <!-- <div id="dsn-scrollbar"> -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -175,7 +175,12 @@
             <div class="wrapper">
 
                 <section class="intro-about" id="about">
-                    <img src="/assets/img/swap_img/TITLE.png" alt="">
+                    <img 
+                    src="/assets/img/swap_img/TITLE.png" 
+                    srcset="/assets/img/swap_img/mob2.png 400w, /assets/img/swap_img/TITLE.png 800w" 
+                    sizes="(max-width: 400px) 100vw, (min-width: 200px) 50vw" 
+                    alt="Description of image">
+                  
                     <!-- <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
@@ -337,7 +342,13 @@
                           </div>
 
                     </div>
-                    <video id="showreelVideo" src="https://res.cloudinary.com/dnfytrepo/video/upload/f_auto:video,q_auto/qbobgja8hca7juzphx04" controls></video>
+                    <div class="video-container showreel">
+                        <video id="showreelVideo" src="https://res.cloudinary.com/dnfytrepo/video/upload/f_auto:video,q_auto/qbobgja8hca7juzphx04" controls poster="./assets/img/swap_img/vid_thumb.png"></video>
+                        <div class="video-overlay">
+                          <button class="play-button"><svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="play-circle"><path fill="#fff" d="M16,10.27,11,7.38A2,2,0,0,0,8,9.11v5.78a2,2,0,0,0,1,1.73,2,2,0,0,0,2,0l5-2.89a2,2,0,0,0,0-3.46ZM15,12l-5,2.89V9.11L15,12ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path></svg></button>
+                        </div>
+                      </div>
+                      
                     <div class="col-lg-12 text-center mt-2">
                         <div class="section-title blue">
                             <!-- <span>Some Best</span> -->
@@ -504,9 +515,9 @@
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
                                         <!-- <img src="assets/img/blog/1.jpg" alt=""> -->
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/iUtnZpzkbG8?si=zDbKZeM04zek6NKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wgpqntSsqhM?si=5pp-6TKJAagQaZDP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
-                                    <div class="content">
+                                    <!-- <div class="content">
                                         <div class="background"></div>
                                         <h5>Web , Brand</h5>
 
@@ -517,15 +528,15 @@
                                         <p>Simple point-and-shoot digital cameras can give surprising quality when they
                                             have the right lenses and sensors.</p>
 
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
                                         <!-- <img src="assets/img/blog/2.jpg" alt=""> -->
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/iUtnZpzkbG8?si=zDbKZeM04zek6NKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/x9nDo0I9cFE?si=CZU6UXw5MOkBbA3i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
-                                    <div class="content">
+                                    <!-- <div class="content">
                                         <div class="background"></div>
                                         <h5>Web , Brand</h5>
 
@@ -535,15 +546,15 @@
 
                                         <p>Simple point-and-shoot digital cameras can give surprising quality when they
                                             have the right lenses and sensors.</p>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="item-new slick-slide">
                                     <div class="image" data-overlay="5">
                                         <!-- <img src="assets/img/blog/3.jpg" alt=""> -->
-                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/iUtnZpzkbG8?si=zDbKZeM04zek6NKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <iframe width="560px" height="315" src="https://www.youtube.com/embed/iUtnZpzkbG8?si=zDbKZeM04zek6NKh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                     </div>
-                                    <div class="content">
+                                    <!-- <div class="content">
                                         <div class="background"></div>
                                         <h5>Web , Brand</h5>
 
@@ -554,7 +565,7 @@
                                         <p>Simple point-and-shoot digital cameras can give surprising quality when they
                                             have the right lenses and sensors.</p>
 
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -1297,8 +1308,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 </script>
 
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.getElementById('showreelVideo');
+      const overlay = document.querySelector('.video-overlay');
+  
+      // Hide overlay when video is clicked
+      video.addEventListener('click', () => {
+        overlay.style.display = 'none'; // Hide the overlay
+      });
+  
+      // Optional: Show overlay when video ends or is paused
+      video.addEventListener('pause', () => {
+        overlay.style.display = 'flex'; // Show the overlay
+      });
+  
+      video.addEventListener('ended', () => {
+        overlay.style.display = 'flex'; // Show the overlay
+      });
+  
+      // Optional: Show overlay if video is not playing initially
+      if (video.paused) {
+        overlay.style.display = 'flex';
+      }
+    });
+  </script>
+  
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

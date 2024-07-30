@@ -213,7 +213,7 @@
 }
 
 [data-overlay]:before {
-  content: '';
+  /* content: ''; */
   position: absolute;
   background: #000;
   width: 100%;
@@ -3240,11 +3240,6 @@ body.hamburger-menu .header-top {
   }
 }
 
-@media only screen and (max-width: 575px) {
-  .header-top .header-container {
-    padding: 20px 15px;
-  }
-}
 
 .header-top .header-container .logo {
   position: relative;
@@ -4716,7 +4711,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 @media only screen and (max-width: 400px) {
   .contact-up .c-wapp a .hiring {
-    font-size: 28px;
+    font-size: 18px;
   }
 }
 
@@ -6231,6 +6226,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 @media only screen and (max-width: 767px) {
   .box-seat .pro-text, .box-seat.box-seat-full .pro-text, .box-seat.box-seat-bottom .pro-text {
     padding: 50px 15px;
+    margin-bottom: 0px;
   }
   .box-seat .pro-text h3, .box-seat.box-seat-full .pro-text h3, .box-seat.box-seat-bottom .pro-text h3 {
     font-size: 25px;
@@ -6246,15 +6242,15 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 @media only screen and (max-width: 400px) {
   .box-seat .pro-text, .box-seat.box-seat-full .pro-text, .box-seat.box-seat-bottom .pro-text {
-    bottom: 0;
+    /* bottom: 0; */
     padding: 30px 20px;
     margin: 0;
   }
   .box-seat .pro-text p, .box-seat.box-seat-full .pro-text p, .box-seat.box-seat-bottom .pro-text p {
     max-width: 100%;
     padding-top: 15px;
-    text-align: center;
-    font-size: 13px;
+    /* text-align: center; */
+    /* font-size: 13px; */
   }
   .showReelNew .blue h2{
     /* font-size: 18px !important; */
@@ -7262,7 +7258,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .our-news .slick-list {
-  padding: 0 20% 0 0;
+  padding: 0 10% 0 0;
 }
 
 @media only screen and (max-width: 400px) {
@@ -8361,6 +8357,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 @media only screen and (max-width: 400px) {
   .our-team .team-item, .work-under-header .work-item {
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -12224,7 +12221,7 @@ footer {
     padding-left: 15px;
   }
   .intro-about img{
-    min-height: 23vh;
+    min-height: 370px;
     object-fit: cover;
   }
   .pro-text h3{
@@ -12800,13 +12797,13 @@ footer .copyright-social ul li:last-child {
     }
 
     .animated_main{
-      font-size: clamp(20px, 2.8vw, 5rem) !important;
+      font-size: clamp(25px, 2.8vw, 5rem) !important;
     }
 
     .typewriter {
       width: 28.5ch;
       animation: cursor 1s step-start infinite, 
-        text 2.5s steps(28) alternate infinite !important;
+      text 2.5s steps(24) alternate infinite !important;
     }
     
     @keyframes cursor {
@@ -12826,8 +12823,9 @@ footer .copyright-social ul li:last-child {
     
 
 	  .showReelNew .blue h2{
-		font-size: 24px;
+		font-size: 19px;
 		line-height: 40px;
+    padding-top: 30px;
 	  }
 	
 	  .end_thanks{
@@ -13202,6 +13200,65 @@ display: none;
 
 
 
+
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.video-container video {
+  display: block;
+  margin: auto;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  width: 55%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Optional: semi-transparent background */
+  pointer-events: none;
+}
+
+.video-overlay .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the thumbnail covers the container */
+}
+
+.video-overlay .play-button {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  background: rgba(0, 0, 0, 0.6); /* Optional: semi-transparent background */
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.play-button{
+  background: transparent !important;
+  outline: none;
+  border: none;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.play-button:focus{
+  outline: none;
+  border: none; 
+}
+
 @media only screen and (max-height:600px) and (max-width: 1280px){
   .pro-text h3{
     font-size: 30px !important;
@@ -13209,5 +13266,88 @@ display: none;
 
   .box-seat .pro-text p{
     font-size: 12px;
+  }
+}
+
+
+
+@media only screen and (max-width:500px) {
+  .carousel-inner{
+    height: 320px;
+    margin-top: 74px;
+  }
+  .header-top .header-container {
+    padding: 25px 15px;
+    background: var(--primary_color);
+  }
+  .header-top .header-container .menu-icon{
+    top: 5px;
+  }
+  .carousel{
+    height: max-content;
+  }
+  .box-seat .inner-img{
+    /* height: 85px; */
+    display: none;
+  }
+  .inner_img_new{
+    position: unset;
+  }
+  .box-seat .pro-text p, .box-seat.box-seat-full .pro-text p, .box-seat.box-seat-bottom .pro-text p {
+    text-align: left;
+  }
+  .pro-text h3{
+    font-size: 20px !important;
+  }
+  .box-seat .pro-text p, .box-seat.box-seat-full .pro-text p, .box-seat.box-seat-bottom .pro-text p{
+    font-size: 15px;
+  }
+  .showReelNew.container-fluid{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .typewriter{
+    padding-top: 0px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .showReelNew{
+    gap: 5px;
+  }
+  .animated_main{
+    padding-bottom: 15px;
+  }
+  .our-work .work-item{
+    height: 80vh;
+  }
+  .our-work .slick-dots{
+    display: none !important;
+  }
+  .section-margin{
+    margin-top: 0;
+  }
+  .our-work.work-under-header{
+    margin-top: 0 !important;
+  }
+  .section-padding{
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .footer .footer-links{
+    padding-top: 20px;
+  }
+  .footer-links{
+    display: none;
+  }
+  .footer{
+    padding-top: 0;
+  }
+  .video-overlay{
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+  }
+  .video-overlay{
+    display: none !important;
   }
 }

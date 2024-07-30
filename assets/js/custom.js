@@ -1474,7 +1474,7 @@ $('.logos-slider1').slick({
   }, {
   breakpoint: 520,
   settings: {
-  slidesToShow: 2
+  slidesToShow: 3
   }
   }]
   });
@@ -1496,7 +1496,7 @@ $('.logos-slider1').slick({
     }, {
     breakpoint: 520,
     settings: {
-    slidesToShow: 2
+    slidesToShow: 3
     }
     }]
     });
@@ -1521,3 +1521,4 @@ $('.logos-slider1').slick({
       });
     }
     removeBodyClasses();
+
