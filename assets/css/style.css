@@ -4706,6 +4706,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    font-size: 18px;
   }
 }
 
@@ -8472,7 +8473,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .fullscreen-slider {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 
 .fullscreen-slider .descover-holder {
@@ -13259,6 +13260,10 @@ display: none;
   border: none; 
 }
 
+.youtube iframe{
+  width: 100%;
+}
+
 @media only screen and (max-height:600px) and (max-width: 1280px){
   .pro-text h3{
     font-size: 30px !important;
@@ -13350,4 +13355,15 @@ display: none;
   .video-overlay{
     display: none !important;
   }
+  /* .intro-about{
+    background: url(../img/swap_img/mob2.png);
+  } */
 }
+
+
+/* .intro-about{
+  background: url(../img/swap_img/TITLE.png);
+  content: '';
+  height: 370px;
+  width: 100%;
+} */
