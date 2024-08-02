@@ -7249,7 +7249,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .our-news .custom-container {
-  width: 120%;
+  /* width: 120%; */
 }
 
 @media only screen and (max-width: 400px) {
@@ -7272,7 +7272,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   vertical-align: top;
   position: relative;
   overflow: hidden;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 @media only screen and (max-width: 991px) {
@@ -13259,6 +13259,10 @@ display: none;
   outline: none;
   border: none; 
 }
+.youtube{
+  width: 500px !important;
+}
+
 
 .youtube iframe{
   width: 100%;
