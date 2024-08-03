@@ -13260,7 +13260,7 @@ display: none;
   border: none; 
 }
 .youtube{
-  width: 500px !important;
+  width: 450px !important;
 }
 
 
@@ -13359,6 +13359,10 @@ display: none;
   .video-overlay{
     display: none !important;
   }
+  .youtube{
+    width: 90%;
+    
+  }
   /* .intro-about{
     background: url(../img/swap_img/mob2.png);
   } */
@@ -13371,3 +13375,11 @@ display: none;
   height: 370px;
   width: 100%;
 } */
+
+
+.yt_grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
