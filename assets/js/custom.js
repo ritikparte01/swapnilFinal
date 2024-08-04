@@ -1496,7 +1496,8 @@ $('.logos-slider1').slick({
     }, {
     breakpoint: 520,
     settings: {
-    slidesToShow: 3
+    slidesToShow: 3,
+    draggable: false,
     }
     }]
     });

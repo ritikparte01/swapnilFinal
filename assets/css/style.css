@@ -3113,7 +3113,7 @@ body.hamburger-menu .header-top {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  display: none;
+  /* display: none; */
 }
 
 .admin-bar .header-top {
@@ -8473,7 +8473,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .fullscreen-slider {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 
 .fullscreen-slider .descover-holder {
@@ -12677,6 +12677,7 @@ footer .copyright-social ul li:last-child {
 	margin-bottom: 0;
 	font-weight: bold;
 	color: var(--primary_color);
+  text-decoration: none;
   }
 
   .contact_box .box_heading{
@@ -12826,7 +12827,7 @@ footer .copyright-social ul li:last-child {
 	  .showReelNew .blue h2{
 		font-size: 19px;
 		line-height: 40px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 	  }
 	
 	  .end_thanks{
@@ -13259,8 +13260,9 @@ display: none;
   outline: none;
   border: none; 
 }
-.youtube{
-  width: 450px !important;
+.youtube {
+  width: 100%;
+  /* max-width: 90%;\ */
 }
 
 
@@ -13283,12 +13285,12 @@ display: none;
 @media only screen and (max-width:500px) {
   .carousel-inner{
     height: 320px;
-    margin-top: 74px;
+    /* margin-top: 74px; */
   }
-  .header-top .header-container {
+  /* .header-top .header-container {
     padding: 25px 15px;
     background: var(--primary_color);
-  }
+  } */
   .header-top .header-container .menu-icon{
     top: 5px;
   }
@@ -13303,7 +13305,7 @@ display: none;
     position: unset;
   }
   .box-seat .pro-text p, .box-seat.box-seat-full .pro-text p, .box-seat.box-seat-bottom .pro-text p {
-    text-align: left;
+    /* text-align: left; */
   }
   .pro-text h3{
     font-size: 20px !important;
@@ -13314,6 +13316,7 @@ display: none;
   .showReelNew.container-fluid{
     padding-top: 0 !important;
     margin-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   .typewriter{
     padding-top: 0px;
@@ -13360,9 +13363,18 @@ display: none;
     display: none !important;
   }
   .youtube{
-    width: 90%;
+    /* width: 90%; */
     
   }
+  .yt_grid {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 100% !important;
+  }
+  .fullscreen-slider {
+    height: 50vh;
+  }
+  
   /* .intro-about{
     background: url(../img/swap_img/mob2.png);
   } */
@@ -13377,9 +13389,13 @@ display: none;
 } */
 
 
-.yt_grid{
-  display: flex;
-  flex-wrap: wrap;
+.yt_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust gap as needed */
+  max-width: 90%;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  place-items: center;
+  margin: auto;
 }
