@@ -12222,7 +12222,7 @@ footer {
     padding-left: 15px;
   }
   .intro-about img{
-    min-height: 370px;
+    min-height: 265px;
     object-fit: cover;
   }
   .pro-text h3{
@@ -12678,6 +12678,15 @@ footer .copyright-social ul li:last-child {
 	font-weight: bold;
 	color: var(--primary_color);
   text-decoration: none;
+  }
+
+  .contact_box .text p:visited{
+    color: red !important;
+  }
+
+  .contact_box .text p a {
+      color: inherit; /* Ensure the link inherits the color from the parent */
+      text-decoration: none; /* Removes underline if present */
   }
 
   .contact_box .box_heading{
