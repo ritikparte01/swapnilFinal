@@ -13410,6 +13410,6 @@ display: none;
   height: 500px;
   position: absolute;
   top: 0;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
 }
