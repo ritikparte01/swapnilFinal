@@ -13399,3 +13399,17 @@ display: none;
   place-items: center;
   margin: auto;
 }
+
+
+.brand-client{
+  position: relative;
+}
+
+.logo_overlay{
+  /* background: red; */
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
